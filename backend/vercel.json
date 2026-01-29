@@ -2,12 +2,15 @@
   "functions": {
     "backend/*.php": {
       "runtime": "vercel-php@0.7.0"
+    },
+    "*.php": {
+      "runtime": "vercel-php@0.7.0"
     }
   },
   "routes": [
     {
-      "src": "/backend/(.*).php",
-      "dest": "/backend/$1.php"
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
