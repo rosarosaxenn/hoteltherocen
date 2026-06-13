@@ -105,12 +105,12 @@ $income = mysqli_fetch_assoc($qIncome);
                     </h2>
                 </div>
 
-                <div class="bg-white p-6 rounded-xl shadow">
-                    <p class="text-gray-500">Total Pemasukan</p>
-                    <h2 class="text-4xl font-bold">
-                        Rp <?= number_format($income['income'], 0, ',', '.'); ?>
-                    </h2>
-                </div>
+                            <div class="bg-white p-6 rounded-xl shadow">
+            <p class="text-gray-500">Total Pemasukan</p>
+            <h2 class="text-4xl font-bold">
+                Rp <?= number_format($income['income'] ?? 0, 0, ',', '.'); ?>
+            </h2>
+            </div>
             </div>
 
             <!-- TAMBAH KAMAR -->
